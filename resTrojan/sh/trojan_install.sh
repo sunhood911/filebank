@@ -9,7 +9,7 @@ green(){
 red(){
     echo -e "\033[31m\033[01m$1\033[0m"
 }
-#copy from 秋水逸冰 ss scripts
+#copy from  ss scripts
 if [[ -f /etc/redhat-release ]]; then
     release="centos"
     systemPackage="yum"
@@ -168,16 +168,24 @@ EOF
 	#设置伪装站
 	rm -rf /usr/share/nginx/html/*
 	cd /usr/share/nginx/html/
-	wget https://github.com/V2RaySSR/Trojan/raw/master/web.zip
-    	unzip web.zip
+
+    #>>>modify by hcy
+	#wget https://github.com/V2RaySSR/Trojan/raw/master/web.zip
+    #	unzip web.zip
+    wget https://raw.githubusercontent.com/sunhood911/filebank/main/resTrojan/web4Trojan/web2/web2.zip
+        unzip  web2.zip
+    #<<<
+
 	systemctl stop nginx
 	sleep 5
 	#申请https证书
 	mkdir /usr/src/trojan-cert /usr/src/trojan-temp
 	curl https://get.acme.sh | sh
+
 	#>>>modify by hcy
-	~/.acme.sh/acme.sh --register-account -m closdaf786@gmail.com
+	~/.acme.sh/acme.sh --register-account -m samsmith9985@gmail.com
 	#<<<
+
 	~/.acme.sh/acme.sh  --issue  -d $your_domain  --standalone
     	~/.acme.sh/acme.sh  --installcert  -d  $your_domain   \
         --key-file   /usr/src/trojan-cert/private.key \
@@ -201,7 +209,14 @@ EOF
         wget -P /usr/src/trojan-macos https://github.com/trojan-gfw/trojan/releases/download/v${latest_version}/trojan-${latest_version}-macos.zip
         unzip /usr/src/trojan-macos/trojan-${latest_version}-macos.zip -d /usr/src/trojan-macos/
         rm -rf /usr/src/trojan-macos/trojan-${latest_version}-macos.zip
-	trojan_passwd=$(cat /dev/urandom | head -1 | md5sum | head -c 8)
+    
+    #>>>>modify by hcy
+    #trojan_passwd=$(cat /dev/urandom | head -1 | md5sum | head -c 8)
+    read -p "设置trojan连接密码:" trojan_passwd
+    #<<<<<
+
+
+
         #配置trojan mac
     cat > /usr/src/trojan-macos/trojan/config.json <<-EOF
 {
@@ -444,8 +459,7 @@ start_menu(){
     green " Trojan 一键安装自动脚本 2020-2-27 更新      "
     green " 系统：centos7+/debian9+/ubuntu16.04+"
     green " 网站：www.v2rayssr.com （已开启禁止国内访问）"
-    green " 此脚本为 atrandys 的，波仔集成BBRPLUS加速及MAC客户端 "
-    green " Youtube：波仔分享                "
+    green " 此脚本为 atrandys 的，集成BBRPLUS加速及MAC客户端 "              "
     green " ===================================="
     blue " 声明："
     red " *请不要在任何生产环境使用此脚本"
