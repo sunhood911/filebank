@@ -1,5 +1,5 @@
 #!/bin/bash
-＃字体颜色
+#字体颜色
 blue(){
     echo -e "\033[34m\033[01m$1\033[0m"
 }
@@ -9,6 +9,7 @@ green(){
 red(){
     echo -e "\033[31m\033[01m$1\033[0m"
 }
+
 #copy from  ss scripts
 if [[ -f /etc/redhat-release ]]; then
     release="centos"
@@ -456,10 +457,10 @@ function bbr_boost_sh(){
 start_menu(){
     clear
     green " ===================================="
-    green " Trojan 一键安装自动脚本 2020-2-27 更新      "
+    green " Trojan 一键安装自动脚本 2020-2-27 更新"
     green " 系统：centos7+/debian9+/ubuntu16.04+"
     green " 网站：www.v2rayssr.com （已开启禁止国内访问）"
-    green " 此脚本为 atrandys 的，集成BBRPLUS加速及MAC客户端 "              "
+    green " 此脚本为 atrandys 的，集成BBRPLUS加速及MAC客户端 " 
     green " ===================================="
     blue " 声明："
     red " *请不要在任何生产环境使用此脚本"
