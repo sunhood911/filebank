@@ -3,6 +3,8 @@
 APP_NAME=trojan
 
 
-ps aux |grep ${APP_NAME} 
+#ps aux |grep ${APP_NAME} 
 
 
+
+systemctl status trojan

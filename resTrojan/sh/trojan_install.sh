@@ -213,7 +213,11 @@ EOF
     
     #>>>>modify by hcy
     #trojan_passwd=$(cat /dev/urandom | head -1 | md5sum | head -c 8)
-    read -p "设置trojan连接密码:" trojan_passwd
+    green "======================================================================"
+    green "设置trojan连接密码"
+    green "======================================================================"
+    #read -p "设置trojan客户端连接密码:" trojan_passwd
+    read trojan_passwd
     #<<<<<
 
 
