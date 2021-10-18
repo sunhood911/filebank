@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-#APP_NAME=trojan
-
-
 #systemctl stop trojan
 
 
@@ -11,6 +8,7 @@ pid=`ps -ef | grep '/usr/src/trojan/trojan -c /usr/src/trojan/server.conf' | gre
 if [[ -n ${pid} ]]; then
 	echo "App $APP_NAME is running,pid=${pid},stop it..."
 	kill -9 ${pid}
+	systemctl stop trojan
 	echo App $APP_NAME stop succeed,pid=${pid}
 else
 	echo "App $APP_NAME is not running"
