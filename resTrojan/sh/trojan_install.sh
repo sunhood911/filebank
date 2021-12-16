@@ -184,9 +184,10 @@ EOF
 	curl https://get.acme.sh | sh
 
 	#>>>modify by hcy
-	~/.acme.sh/acme.sh --register-account -m samsmith9985@gmail.com
+	~/.acme.sh/acme.sh --register-account -m cloudyc86@gmail.com
 	#<<<
 
+	#~/.acme.sh/acme.sh  --issue  -d $your_domain  --set-default-ca --server letsencrypt --standalone
 	~/.acme.sh/acme.sh  --issue  -d $your_domain  --standalone
     	~/.acme.sh/acme.sh  --installcert  -d  $your_domain   \
         --key-file   /usr/src/trojan-cert/private.key \
