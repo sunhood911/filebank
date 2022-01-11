@@ -190,8 +190,8 @@ EOF
 	curl https://get.acme.sh | sh
 
 	#>>>modify by hcy
-	~/.acme.sh/acme.sh --register-account -m cloudyc86@gmail.com
 	~/.acme.sh/acme.sh --upgrade
+	~/.acme.sh/acme.sh --register-account -m cloudyc86@gmail.com
 	#<<<
 
 	#~/.acme.sh/acme.sh  --issue  -d $your_domain  --set-default-ca --server letsencrypt --standalone
