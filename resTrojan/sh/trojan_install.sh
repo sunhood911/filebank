@@ -180,6 +180,12 @@ EOF
 	systemctl stop nginx
 	sleep 5
 	#申请https证书
+	
+	#>>>modify by hcy
+	rm -rf /usr/src/trojan-cert
+	rm -rf /usr/src/trojan-temp
+	#<<<
+	
 	mkdir /usr/src/trojan-cert /usr/src/trojan-temp
 	curl https://get.acme.sh | sh
 
