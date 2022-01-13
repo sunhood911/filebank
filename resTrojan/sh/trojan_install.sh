@@ -194,7 +194,8 @@ EOF
 	~/.acme.sh/acme.sh --register-account -m cloudyc86@gmail.com
 	#<<<
 
-	#~/.acme.sh/acme.sh --set-default-ca --server letsencrypt
+	#add by hcy
+	~/.acme.sh/acme.sh --set-default-ca --server letsencrypt
 	#~/.acme.sh/acme.sh  --issue  -d $your_domain  --set-default-ca --server letsencrypt --standalone
 	~/.acme.sh/acme.sh  --issue  -d $your_domain  --standalone
     	~/.acme.sh/acme.sh  --installcert  -d  $your_domain   \
