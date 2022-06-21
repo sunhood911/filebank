@@ -29,3 +29,7 @@ echo " check_trojan.sh"
 rm -f  check_trojan.sh
 curl -o  check_trojan.sh ${resTrojan_sh}check_trojan.sh && chmod +x  check_trojan.sh 
 
+echo " daemon_trojan.sh"
+rm -f  daemon_trojan.sh
+curl -o  daemon_trojan.sh ${resTrojan_sh}daemon_trojan.sh && chmod +x  daemon_trojan.sh 
+
