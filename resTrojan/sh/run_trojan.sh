@@ -32,7 +32,7 @@ function run_daemon_trojan(){
 DAEMON_NAME=daemon_trojan
 
 #nohup bash -x ./daemon_trojan.sh >/dev/null 2>log & #executed without log
-nohup bash -x ./daemon_trojan.sh>log.log 2>&1 &
+nohup bash -x ./daemon_trojan.sh > log.log 2>&1 &
 
 
 pid2=`ps -ef | grep 'daemon_trojan' | grep -v grep |awk '{print $2}'`
@@ -53,6 +53,8 @@ fi
 ########################   start  ###############################
 run_trojan
 sleep 1
+echo ""
+echo ""
 run_daemon_trojan
 
 ########################   start  ###############################

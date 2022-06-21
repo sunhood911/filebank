@@ -8,8 +8,7 @@ DAEMON_NAME=daemon_trojan
 function status_daemon(){
 pid=`ps -ef | grep 'daemon_trojan' | grep -v grep |awk '{print $2}'`
 if [[ -n ${pid} ]]; then
-	echo ""
-	echo ""
+
     echo "App $DAEMON_NAME is running,pid=${pid}"
 else
     echo "App $DAEMON_NAME is not running"
@@ -22,6 +21,9 @@ systemctl status trojan
 
 sleep 1
 
+echo ""
+echo ""
+	
 status_daemon
 
 

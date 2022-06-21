@@ -42,5 +42,7 @@ fi
 stop_daemon
 
 sleep 2
+echo ""
+echo ""
 stop_trojan
 ########################   start  ###############################
