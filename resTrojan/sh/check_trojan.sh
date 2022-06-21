@@ -6,14 +6,11 @@ DAEMON_NAME=daemon_trojan
 #ps aux |grep ${APP_NAME} 
 
 function status_daemon(){
-pid2=`ps -ef | grep 'daemon_trojan' | grep -v grep |awk '{print $2}'`
-if [[ -n ${pid2} ]]; then
+pid=`ps -ef | grep 'daemon_trojan' | grep -v grep |awk '{print $2}'`
+if [[ -n ${pid} ]]; then
 	echo ""
 	echo ""
     echo "App $DAEMON_NAME is running,pid=${pid}"
-    #kill -9 ${pid2}
-    #systemctl stop trojan
-    #echo App $DAEMON_NAME stop succeed,pid=${pid2}
 else
     echo "App $DAEMON_NAME is not running"
 fi
