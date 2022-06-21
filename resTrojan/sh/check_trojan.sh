@@ -20,7 +20,7 @@ fi
 ########################   start  ###############################
 systemctl status trojan
 
-sleep 3
+sleep 1
 
 status_daemon
 
