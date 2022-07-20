@@ -39,7 +39,7 @@ function execute(){
 while :
 do
     run_trojan
-    sleep 60
+    sleep 4
 done
 
 }
