@@ -1,4 +1,5 @@
 #!/bin/bash
+my_email="cloudycv@gmail.com"
 #字体颜色
 blue(){
     echo -e "\033[34m\033[01m$1\033[0m"
@@ -10,7 +11,6 @@ red(){
     echo -e "\033[31m\033[01m$1\033[0m"
 }
 
-my_email="cloudycv@gmail.com"
 
 #copy from  ss scripts
 if [[ -f /etc/redhat-release ]]; then
