@@ -10,6 +10,8 @@ red(){
     echo -e "\033[31m\033[01m$1\033[0m"
 }
 
+my_email="cloudycv@gmail.com"
+
 #copy from  ss scripts
 if [[ -f /etc/redhat-release ]]; then
     release="centos"
@@ -191,7 +193,7 @@ EOF
 
 	#>>>modify by hcy
 	~/.acme.sh/acme.sh --upgrade
-	~/.acme.sh/acme.sh --register-account -m cloudyc@gmail.com
+	~/.acme.sh/acme.sh --register-account -m ${my_email}
 	#<<<
 
 	#add by hcy
