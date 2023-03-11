@@ -1,5 +1,5 @@
 #!/bin/bash
-my_email="cloudycv@gmail.com"
+
 #字体颜色
 blue(){
     echo -e "\033[34m\033[01m$1\033[0m"
@@ -140,6 +140,24 @@ if [ $real_addr == $local_addr ] ; then
 	green "       域名解析正常，开始安装trojan"
 	green "=========================================="
 	sleep 1s
+	
+#>>>>modify by hcy
+green "======================================================================"
+blue "输入邮箱随机码(任意纯数据，不同vps需不一样)"
+green "======================================================================"
+#read -p "设置trojan客户端连接密码:" trojan_passwd
+read my_email_tmp
+my_email="cloudycv688${my_email_tmp}@gmail.com"
+#<<<<<
+
+#>>>>modify by hcy
+green "======================================================================"
+blue "设置trojan连接密码"
+green "======================================================================"
+#read -p "设置trojan客户端连接密码:" trojan_passwd
+read trojan_passwd
+#<<<<<
+
 cat > /etc/nginx/nginx.conf <<-EOF
 user  root;
 worker_processes  1;
@@ -223,17 +241,8 @@ EOF
         unzip /usr/src/trojan-macos/trojan-${latest_version}-macos.zip -d /usr/src/trojan-macos/
         rm -rf /usr/src/trojan-macos/trojan-${latest_version}-macos.zip
     
-    #>>>>modify by hcy
-    #trojan_passwd=$(cat /dev/urandom | head -1 | md5sum | head -c 8)
-    green "======================================================================"
-    green "设置trojan连接密码"
-    green "======================================================================"
-    #read -p "设置trojan客户端连接密码:" trojan_passwd
-    read trojan_passwd
-    #<<<<<
 
-
-
+	#密码
         #配置trojan mac
     cat > /usr/src/trojan-macos/trojan/config.json <<-EOF
 {
