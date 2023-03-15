@@ -7,7 +7,7 @@ echo "创建成功killer文件夹~"
 else
 echo "killer文件夹已存在鸭... "
 fi
-
+cd killer
 
 path="https://raw.githubusercontent.com/sunhood911/filebank/main/resTrojan/sh/killer/"
 
@@ -27,9 +27,9 @@ curl -o  run_cpu_killer.sh ${path}run_cpu_killer.sh && chmod +x  run_cpu_killer.
 echo " run_mem_killer.sh"
 rm -f  run_mem_killer.sh
 curl -o  run_mem_killer.sh ${path}run_mem_killer.sh && chmod +x  run_mem_killer.sh 
-echo " run_mem_net.sh"
-rm -f  run_mem_net.sh
-curl -o  run_mem_net.sh ${path}run_mem_net.sh && chmod +x  run_mem_net.sh 
+echo " run_net_killer.sh"
+rm -f  run_net_killer.sh
+curl -o  run_net_killer.sh ${path}run_net_killer.sh && chmod +x  run_net_killer.sh 
 
 
 echo " stop_all.sh"
