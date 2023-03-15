@@ -7,7 +7,7 @@ wget speedtest.py https://raw.github.com/sivel/speedtest-cli/master/speedtest.py
 endless_loop()
 {
 do
-${python3_} speedtest.py
+${python3_} speedtest.py &
 sleep 300
 done
 
