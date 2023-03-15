@@ -8,7 +8,7 @@ endless_loop()
 for((;;))
 do
 /usr/bin/python3 speedtest.py   1>log.log 2>&1 &
-sleep 10
+sleep 300
 done
 
 }
