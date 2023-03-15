@@ -5,6 +5,7 @@ wget speedtest.py https://raw.github.com/sivel/speedtest-cli/master/speedtest.py
 
 endless_loop()
 {
+for((;;))
 do
 /usr/bin/python3 speedtest.py   1>log.log 2>&1 &
 sleep 10
