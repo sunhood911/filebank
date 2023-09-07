@@ -51,7 +51,7 @@ function stop1(){
 function stop2(){
 
 	nohup ./mem_killer.sh release  1>log.log 2>&1 &
-	kill -s 9 `ps -aux | grep 'cpu_killer' | awk '{print $2}'`
+	kill -s 9 `ps -aux | grep cpu_killer | awk '{print $2}'`
 	kill -s 9 `ps -aux | grep net_killer | awk '{print $2}'`
 	kill -s 9 `ps -aux | grep mem_killer | awk '{print $2}'`
 	cat /dev/null > log.log
@@ -59,4 +59,13 @@ function stop2(){
 }
 
 
-stop2()
+function stop3(){
+
+	nohup ./mem_killer.sh release  1>log.log 2>&1 &
+	kill -s 9 `ps -aux | grep 'killer.sh' | awk '{print $2}'`
+	cat /dev/null > log.log
+
+}
+
+
+stop3()
