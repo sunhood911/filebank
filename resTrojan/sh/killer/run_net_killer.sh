@@ -2,14 +2,14 @@
 
 
 
-function mem_killer(){
+function net_killer(){
 
-   DAEMON_NAME=mem_killer
+   DAEMON_NAME=net_killer.sh
    cat /dev/null > log.log
 
-   nohup ./net_killer.sh  1>log.log 2>&1 &
+   nohup ./$DAEMON_NAME  1>log.log 2>&1 &
 
-   pid2=`ps -ef | grep 'daemon_trojan' | grep -v grep |awk '{print $2}'`
+   pid2=`ps -ef | grep $DAEMON_NAME | grep -v grep |awk '{print $2}'`
    if [[ -n ${pid2} ]]; then
        echo "App $DAEMON_NAME start succeed,pid=${pid2}"
    else
@@ -20,4 +20,4 @@ function mem_killer(){
 }
 
 
-mem_killer
+net_killer

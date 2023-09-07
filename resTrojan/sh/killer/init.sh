@@ -15,9 +15,11 @@ path="https://raw.githubusercontent.com/sunhood911/filebank/main/resTrojan/sh/ki
 echo " cpu_killer.sh"
 rm -f  ${dir}/cpu_killer.sh
 curl -o  ${dir}/cpu_killer.sh ${path}cpu_killer.sh && chmod +x  ${dir}/cpu_killer.sh 
+
 echo " mem_killer.sh"
 rm -f  ${dir}/mem_killer.sh
 curl -o  ${dir}/mem_killer.sh ${path}mem_killer.sh && chmod +x  ${dir}/mem_killer.sh  
+
 echo " net_killer.sh"
 rm -f  ${dir}/net_killer.sh
 curl -o  ${dir}/net_killer.sh ${path}net_killer.sh && chmod +x  ${dir}/net_killer.sh  
@@ -25,9 +27,11 @@ curl -o  ${dir}/net_killer.sh ${path}net_killer.sh && chmod +x  ${dir}/net_kille
 echo " run_cpu_killer.sh"
 rm -f  ${dir}/run_cpu_killer.sh
 curl -o  ${dir}/run_cpu_killer.sh ${path}run_cpu_killer.sh && chmod +x  ${dir}/run_cpu_killer.sh 
+
 echo " run_mem_killer.sh"
 rm -f  ${dir}/run_mem_killer.sh
 curl -o  ${dir}/run_mem_killer.sh ${path}run_mem_killer.sh && chmod +x  ${dir}/run_mem_killer.sh 
+
 echo " run_net_killer.sh"
 rm -f  ${dir}/run_net_killer.sh
 curl -o  ${dir}/run_net_killer.sh ${path}run_net_killer.sh && chmod +x  ${dir}/run_net_killer.sh 
