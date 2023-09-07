@@ -12,7 +12,7 @@ do
 	do
 		x=$((x+1))
 	done
-	sleep 0.01
+	sleep 0.02
 done
 
 }
