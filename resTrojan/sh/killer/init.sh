@@ -38,6 +38,11 @@ rm -f  ${dir}/stop_all.sh
 curl -o  ${dir}/stop_all.sh ${path}stop_all.sh && chmod +x  ${dir}/stop_all.sh 
 
 
+echo " check.sh"
+rm -f  ${dir}/check.sh
+curl -o  ${dir}/check.sh ${path}check.sh && chmod +x  ${dir}/check.sh 
+
+
 
 
 
