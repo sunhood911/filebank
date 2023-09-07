@@ -4,12 +4,17 @@
 
 endless_loop()
 {
-
+x=1
 while true
 do
-i=i+100;
-i=100
+	x=1
+	while [ $x -le 10000000 ]
+	do
+		x=$((x+1))
+	done
+	sleep 0.01
 done
+
 }
 
 endless_loop
