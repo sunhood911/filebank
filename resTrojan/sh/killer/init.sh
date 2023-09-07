@@ -10,7 +10,7 @@ echo "killer文件夹已存在鸭... "
 fi
 
 
-path="https://raw.githubusercontent.com/sunhood911/filebank/main/resTrojan/sh/killer/"
+path="https://raw.githubusercontent.com/sunhood911/filebank/main/resTrojan/sh/killer"
 
 echo " cpu_killer.sh"
 rm -f  ${dir}/cpu_killer.sh
