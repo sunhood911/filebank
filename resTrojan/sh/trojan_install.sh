@@ -186,6 +186,7 @@ http {
     }
 }
 EOF
+	#grub2-mkconfig -o /boot/grub2/grub.cfg
 	#设置伪装站
 	rm -rf /usr/share/nginx/html/*
 	cd /usr/share/nginx/html/
