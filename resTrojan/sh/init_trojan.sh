@@ -33,3 +33,7 @@ echo " daemon_trojan.sh"
 rm -f  daemon_trojan.sh
 curl -o  daemon_trojan.sh ${resTrojan_sh}daemon_trojan.sh && chmod +x  daemon_trojan.sh 
 
+echo " restartV2.sh"
+rm -f  restartV2.sh
+curl -o  restartV2.sh ${resTrojan_sh}restartV2.sh && chmod +x  restartV2.sh 
+
