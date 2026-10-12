@@ -4,3 +4,4 @@ https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-c
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-DE.txt
 https://raw.githubusercontent.com/cbusifabcap/daily_free_vpn/refs/heads/main/sub/V2Ray.yml
 https://raw.githubusercontent.com/kooker/FreeSubsCheck/refs/heads/main/base64.txt
+https://raw.githubusercontent.com/sunhood911/filebank/refs/heads/main/resTrojan/proxyNode/node
