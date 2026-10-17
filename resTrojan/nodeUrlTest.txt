@@ -1,1 +1,1 @@
-
+https://raw.githubusercontent.com/sunhood911/filebank/refs/heads/main/resTrojan/proxyNode/node
