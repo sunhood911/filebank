@@ -11,3 +11,4 @@ https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt
 https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/vmess_configs.txt
 https://cdn.jsdelivr.net/gh/LeilaoMi/AutoMergePublicNodes-Optimized@main/output/verified.txt
 https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/verified.txt
+https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/top.txt
